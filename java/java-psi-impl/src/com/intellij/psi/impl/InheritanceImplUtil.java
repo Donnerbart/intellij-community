@@ -92,14 +92,10 @@ public final class InheritanceImplUtil {
       boolean isCandidateInterface = candidateClass.isInterface();
       boolean isBaseInterface = baseClass.isInterface();
       String baseName = baseClass.getName();
-      if (isCandidateInterface == isBaseInterface) {
+      if (isCandidateInterface || !isBaseInterface) {
         return PsiClassImplUtil.isInExtendsList(candidateClass, baseClass, baseName, manager);
       }
-      if (!isCandidateInterface) {
-        return PsiClassImplUtil.isInReferenceList(candidateClass.getImplementsList(), baseClass, baseName, manager);
-      }
-
-      return false;
+      return PsiClassImplUtil.isInReferenceList(candidateClass.getImplementsList(), baseClass, baseName, manager);
     }
 
     return isInheritorWithoutCaching(manager, candidateClass, baseClass, checkedClasses);
