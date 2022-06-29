@@ -35,9 +35,19 @@ public abstract class MavenConfigureProjectByChangingFileTestGenerated extends A
             runTest("testData/configurator/jvm/jreLib/");
         }
 
+        @TestMetadata("libraryMissed")
+        public void testLibraryMissed() throws Exception {
+            runTest("testData/configurator/jvm/libraryMissed/");
+        }
+
         @TestMetadata("libraryMissing")
         public void testLibraryMissing() throws Exception {
             runTest("testData/configurator/jvm/libraryMissing/");
+        }
+
+        @TestMetadata("pluginMissed")
+        public void testPluginMissed() throws Exception {
+            runTest("testData/configurator/jvm/pluginMissed/");
         }
 
         @TestMetadata("pluginMissing")
@@ -60,9 +70,19 @@ public abstract class MavenConfigureProjectByChangingFileTestGenerated extends A
             runTest("testData/configurator/jvm/simpleProjectDev/");
         }
 
+        @TestMetadata("simpleProjectEAP")
+        public void testSimpleProjectEAP() throws Exception {
+            runTest("testData/configurator/jvm/simpleProjectEAP/");
+        }
+
         @TestMetadata("simpleProjectMilestone")
         public void testSimpleProjectMilestone() throws Exception {
             runTest("testData/configurator/jvm/simpleProjectMilestone/");
+        }
+
+        @TestMetadata("simpleProjectRc")
+        public void testSimpleProjectRc() throws Exception {
+            runTest("testData/configurator/jvm/simpleProjectRc/");
         }
 
         @TestMetadata("simpleProjectReleaseCandidate")
@@ -88,9 +108,19 @@ public abstract class MavenConfigureProjectByChangingFileTestGenerated extends A
             KotlinTestUtils.runTest(this::doTestWithJSMaven, this, testDataFilePath);
         }
 
+        @TestMetadata("libraryMissed")
+        public void testLibraryMissed() throws Exception {
+            runTest("testData/configurator/js/libraryMissed/");
+        }
+
         @TestMetadata("libraryMissing")
         public void testLibraryMissing() throws Exception {
             runTest("testData/configurator/js/libraryMissing/");
+        }
+
+        @TestMetadata("pluginMissed")
+        public void testPluginMissed() throws Exception {
+            runTest("testData/configurator/js/pluginMissed/");
         }
 
         @TestMetadata("pluginMissing")

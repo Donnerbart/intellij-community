@@ -23,6 +23,11 @@ public class ProjectTemplateBuildFileGenerationTestGenerated extends AbstractPro
         KotlinTestUtils.runTest(this::doTest, this, testDataFilePath);
     }
 
+    @TestMetadata("backendApplication")
+    public void testBackendApplication() throws Exception {
+        runTest("testData/projectTemplatesBuildFileGeneration/backendApplication/");
+    }
+
     @TestMetadata("composeDesktopApplication")
     public void testComposeDesktopApplication() throws Exception {
         runTest("testData/projectTemplatesBuildFileGeneration/composeDesktopApplication/");
@@ -48,9 +53,24 @@ public class ProjectTemplateBuildFileGenerationTestGenerated extends AbstractPro
         runTest("testData/projectTemplatesBuildFileGeneration/fullStackWebApplication/");
     }
 
+    @TestMetadata("multiplatformApplication")
+    public void testMultiplatformApplication() throws Exception {
+        runTest("testData/projectTemplatesBuildFileGeneration/multiplatformApplication/");
+    }
+
     @TestMetadata("multiplatformLibrary")
     public void testMultiplatformLibrary() throws Exception {
         runTest("testData/projectTemplatesBuildFileGeneration/multiplatformLibrary/");
+    }
+
+    @TestMetadata("multiplatformMobileApplication")
+    public void testMultiplatformMobileApplication() throws Exception {
+        runTest("testData/projectTemplatesBuildFileGeneration/multiplatformMobileApplication/");
+    }
+
+    @TestMetadata("multiplatformMobileLibrary")
+    public void testMultiplatformMobileLibrary() throws Exception {
+        runTest("testData/projectTemplatesBuildFileGeneration/multiplatformMobileLibrary/");
     }
 
     @TestMetadata("nativeApplication")

@@ -25,6 +25,11 @@ public abstract class ProjectTemplateNewWizardProjectImportTestGenerated extends
             KotlinTestUtils.runTest(this::doTestGradleKts, this, testDataFilePath);
         }
 
+        @TestMetadata("backendApplication")
+        public void testBackendApplication() throws Exception {
+            runTest("../cli/testData/projectTemplatesBuildFileGeneration/backendApplication/");
+        }
+
         @TestMetadata("composeDesktopApplication")
         public void testComposeDesktopApplication() throws Exception {
             runTest("../cli/testData/projectTemplatesBuildFileGeneration/composeDesktopApplication/");
@@ -50,9 +55,24 @@ public abstract class ProjectTemplateNewWizardProjectImportTestGenerated extends
             runTest("../cli/testData/projectTemplatesBuildFileGeneration/fullStackWebApplication/");
         }
 
+        @TestMetadata("multiplatformApplication")
+        public void testMultiplatformApplication() throws Exception {
+            runTest("../cli/testData/projectTemplatesBuildFileGeneration/multiplatformApplication/");
+        }
+
         @TestMetadata("multiplatformLibrary")
         public void testMultiplatformLibrary() throws Exception {
             runTest("../cli/testData/projectTemplatesBuildFileGeneration/multiplatformLibrary/");
+        }
+
+        @TestMetadata("multiplatformMobileApplication")
+        public void testMultiplatformMobileApplication() throws Exception {
+            runTest("../cli/testData/projectTemplatesBuildFileGeneration/multiplatformMobileApplication/");
+        }
+
+        @TestMetadata("multiplatformMobileLibrary")
+        public void testMultiplatformMobileLibrary() throws Exception {
+            runTest("../cli/testData/projectTemplatesBuildFileGeneration/multiplatformMobileLibrary/");
         }
 
         @TestMetadata("nativeApplication")
@@ -68,6 +88,11 @@ public abstract class ProjectTemplateNewWizardProjectImportTestGenerated extends
             KotlinTestUtils.runTest(this::doTestGradleGroovy, this, testDataFilePath);
         }
 
+        @TestMetadata("backendApplication")
+        public void testBackendApplication() throws Exception {
+            runTest("../cli/testData/projectTemplatesBuildFileGeneration/backendApplication/");
+        }
+
         @TestMetadata("composeDesktopApplication")
         public void testComposeDesktopApplication() throws Exception {
             runTest("../cli/testData/projectTemplatesBuildFileGeneration/composeDesktopApplication/");
@@ -93,9 +118,24 @@ public abstract class ProjectTemplateNewWizardProjectImportTestGenerated extends
             runTest("../cli/testData/projectTemplatesBuildFileGeneration/fullStackWebApplication/");
         }
 
+        @TestMetadata("multiplatformApplication")
+        public void testMultiplatformApplication() throws Exception {
+            runTest("../cli/testData/projectTemplatesBuildFileGeneration/multiplatformApplication/");
+        }
+
         @TestMetadata("multiplatformLibrary")
         public void testMultiplatformLibrary() throws Exception {
             runTest("../cli/testData/projectTemplatesBuildFileGeneration/multiplatformLibrary/");
+        }
+
+        @TestMetadata("multiplatformMobileApplication")
+        public void testMultiplatformMobileApplication() throws Exception {
+            runTest("../cli/testData/projectTemplatesBuildFileGeneration/multiplatformMobileApplication/");
+        }
+
+        @TestMetadata("multiplatformMobileLibrary")
+        public void testMultiplatformMobileLibrary() throws Exception {
+            runTest("../cli/testData/projectTemplatesBuildFileGeneration/multiplatformMobileLibrary/");
         }
 
         @TestMetadata("nativeApplication")
@@ -111,6 +151,11 @@ public abstract class ProjectTemplateNewWizardProjectImportTestGenerated extends
             KotlinTestUtils.runTest(this::doTestMaven, this, testDataFilePath);
         }
 
+        @TestMetadata("backendApplication")
+        public void testBackendApplication() throws Exception {
+            runTest("../cli/testData/projectTemplatesBuildFileGeneration/backendApplication/");
+        }
+
         @TestMetadata("composeDesktopApplication")
         public void testComposeDesktopApplication() throws Exception {
             runTest("../cli/testData/projectTemplatesBuildFileGeneration/composeDesktopApplication/");
@@ -136,9 +181,24 @@ public abstract class ProjectTemplateNewWizardProjectImportTestGenerated extends
             runTest("../cli/testData/projectTemplatesBuildFileGeneration/fullStackWebApplication/");
         }
 
+        @TestMetadata("multiplatformApplication")
+        public void testMultiplatformApplication() throws Exception {
+            runTest("../cli/testData/projectTemplatesBuildFileGeneration/multiplatformApplication/");
+        }
+
         @TestMetadata("multiplatformLibrary")
         public void testMultiplatformLibrary() throws Exception {
             runTest("../cli/testData/projectTemplatesBuildFileGeneration/multiplatformLibrary/");
+        }
+
+        @TestMetadata("multiplatformMobileApplication")
+        public void testMultiplatformMobileApplication() throws Exception {
+            runTest("../cli/testData/projectTemplatesBuildFileGeneration/multiplatformMobileApplication/");
+        }
+
+        @TestMetadata("multiplatformMobileLibrary")
+        public void testMultiplatformMobileLibrary() throws Exception {
+            runTest("../cli/testData/projectTemplatesBuildFileGeneration/multiplatformMobileLibrary/");
         }
 
         @TestMetadata("nativeApplication")

@@ -25,6 +25,16 @@ public abstract class GradleConfigureProjectByChangingFileTestGenerated extends 
             KotlinTestUtils.runTest(this::doTestGradle, this, testDataFilePath);
         }
 
+        @TestMetadata("default")
+        public void testDefault() throws Exception {
+            runTest("../../../idea/tests/testData/configuration/gradle/default/");
+        }
+
+        @TestMetadata("eapVersion")
+        public void testEapVersion() throws Exception {
+            runTest("../../../idea/tests/testData/configuration/gradle/eapVersion/");
+        }
+
         @TestMetadata("jreLib")
         public void testJreLib() throws Exception {
             runTest("../../../idea/tests/testData/configuration/gradle/jreLib/");
@@ -40,9 +50,29 @@ public abstract class GradleConfigureProjectByChangingFileTestGenerated extends 
             runTest("../../../idea/tests/testData/configuration/gradle/libraryMissing/");
         }
 
+        @TestMetadata("m04Version")
+        public void testM04Version() throws Exception {
+            runTest("../../../idea/tests/testData/configuration/gradle/m04Version/");
+        }
+
+        @TestMetadata("missedLibrary")
+        public void testMissedLibrary() throws Exception {
+            runTest("../../../idea/tests/testData/configuration/gradle/missedLibrary/");
+        }
+
         @TestMetadata("pluginPresent")
         public void testPluginPresent() throws Exception {
             runTest("../../../idea/tests/testData/configuration/gradle/pluginPresent/");
+        }
+
+        @TestMetadata("plugin_present")
+        public void testPlugin_present() throws Exception {
+            runTest("../../../idea/tests/testData/configuration/gradle/plugin_present/");
+        }
+
+        @TestMetadata("rcVersion")
+        public void testRcVersion() throws Exception {
+            runTest("../../../idea/tests/testData/configuration/gradle/rcVersion/");
         }
 
         @TestMetadata("simpleProject")
@@ -88,9 +118,29 @@ public abstract class GradleConfigureProjectByChangingFileTestGenerated extends 
             KotlinTestUtils.runTest(this::doTestGradle, this, testDataFilePath);
         }
 
+        @TestMetadata("eap11Version")
+        public void testEap11Version() throws Exception {
+            runTest("../../../idea/tests/testData/configuration/gsk/eap11Version/");
+        }
+
+        @TestMetadata("eapVersion")
+        public void testEapVersion() throws Exception {
+            runTest("../../../idea/tests/testData/configuration/gsk/eapVersion/");
+        }
+
+        @TestMetadata("helloWorld")
+        public void testHelloWorld() throws Exception {
+            runTest("../../../idea/tests/testData/configuration/gsk/helloWorld/");
+        }
+
         @TestMetadata("libraryMissing")
         public void testLibraryMissing() throws Exception {
             runTest("../../../idea/tests/testData/configuration/gsk/libraryMissing/");
+        }
+
+        @TestMetadata("missedLibrary")
+        public void testMissedLibrary() throws Exception {
+            runTest("../../../idea/tests/testData/configuration/gsk/missedLibrary/");
         }
 
         @TestMetadata("pluginPresent")
