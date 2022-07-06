@@ -112,6 +112,31 @@ public class WrapperTest extends JavaFormatterTestCase {
     doTest("MethodParameterList", "MethodParameterList_chopped_parenmoved");
   }
 
+  public void testMethodParametersWrappingChoppedLeftParenMoved() throws Exception {
+    CommonCodeStyleSettings settings = getSettings(JavaLanguage.INSTANCE);
+
+    defaultCodeStyle();
+    settings.METHOD_PARAMETERS_WRAP = CommonCodeStyleSettings.WRAP_AS_NEEDED | CommonCodeStyleSettings.WRAP_ON_EVERY_ITEM;
+    settings.METHOD_PARAMETERS_RPAREN_ON_NEXT_LINE = false;
+    settings.METHOD_PARAMETERS_LPAREN_ON_NEXT_LINE = true;
+
+    settings.RIGHT_MARGIN = 50;
+    doTest("MethodParameterList", "MethodParameterList_chopped_leftparenmoved");
+  }
+
+  public void testMethodParametersWrappingChoppedLeftParenMovedAndKeepLineBreaksDisabledIsStable() throws Exception {
+    CommonCodeStyleSettings settings = getSettings(JavaLanguage.INSTANCE);
+
+    defaultCodeStyle();
+    settings.METHOD_PARAMETERS_WRAP = CommonCodeStyleSettings.WRAP_AS_NEEDED | CommonCodeStyleSettings.WRAP_ON_EVERY_ITEM;
+    settings.METHOD_PARAMETERS_RPAREN_ON_NEXT_LINE = false;
+    settings.METHOD_PARAMETERS_LPAREN_ON_NEXT_LINE = true;
+    settings.KEEP_LINE_BREAKS = false;
+
+    settings.RIGHT_MARGIN = 50;
+    doTest("MethodParameterList_chopped_leftparenmoved", "MethodParameterList_chopped_leftparenmoved");
+  }
+
   public void testCallParametersWrappingNormal() throws Exception {
     CommonCodeStyleSettings settings = getSettings(JavaLanguage.INSTANCE);
 
